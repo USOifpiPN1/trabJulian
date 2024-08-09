@@ -1,0 +1,22 @@
+{% extends 'base_generica.html' %}
+
+{% block content %}
+
+<div class="w3-container w3-text-grey" id="jeans">
+  <h1>Produtos Disponíveis</h1>
+  <p>{{produtos_publicados}} items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    {% for p in produtos %}
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="{{ p.imagem.url }}" style="width:100%">
+        <p>{{ p.titulo }}<br><b>{{ p.preco }}</b></p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base_generica.html' %}
+
+{% block content %}
+
+<h1>Loja Online</h1>
+<p>Seja bem vindo a nossa Loja</p>
+
+
+<h2>A loja contém a seguinte quantidade de produto:</h2>
+
+<ul>
+    <li><strong>Produtos:</strong> {{ num_produtos }} </li>
+    <li><strong>Camisas:</strong> {{ num_camisas }} </li>
+</ul>
+
+{% endblock %}
